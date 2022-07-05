@@ -7,7 +7,7 @@
     <title>User List</title>
 </head>
 <body>
-    <h1>User List</h1>
+    <h1>Customer List</h1>
     <?php
         $handle = fopen("../content/Customer.json","r"); 
         $fr=fread($handle,filesize("../content/Customer.json")); 
