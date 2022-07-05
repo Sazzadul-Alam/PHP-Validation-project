@@ -33,18 +33,12 @@ session_start();
             $firstNameErr = "* First Name is required.";
         } else {
             $firstName = sanitize($_POST['fname']);
-            if (!preg_match("/^[a-zA-Z-' ]*$/", $firstName)) {
-                $firstNameErr = "Only letters and white space allowed";
-            }
         }
 
         if (empty($_POST['lname'])) {
             $lastNameErr = "* Last Name is required.";
         } else {
             $lastName = sanitize($_POST['lname']);
-            if (!preg_match("/^[a-zA-Z-' ]*$/", $lastName)) {
-                $lastNameErr = "Only letters and white space allowed";
-            }
         }
 
         if (empty($_POST['gender'])) {
@@ -61,9 +55,6 @@ session_start();
             $emailErr = "* Email is required";
         } else {
             $email = sanitize($_POST["email"]);
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $emailErr = "Invalid email format";
-            }
         }
 
 
