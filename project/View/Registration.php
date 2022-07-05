@@ -68,6 +68,7 @@ error_reporting(E_ERROR | E_PARSE);
             <p>Already registerd? log in instead</p>
             <form action="">
                 <button class="register-btn btn" type="submit" formaction="../view/logIn.php">Log in</button>
+                <button><a href="../view/FirstPage.php" style="text-decoration:none">Go Back</a></button>
             </form>
 
         </div>

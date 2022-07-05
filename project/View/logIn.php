@@ -31,7 +31,8 @@ error_reporting(E_ERROR | E_PARSE);
                 <input class="login-btn btn" type="submit" value="Log in">
             </form>
             <form action="">
-                <button class="register-btn btn" type="submit" formaction="../view/registration.php">Register</button>
+                <button class="register-btn btn" type="submit" formaction="../view/registration.php">Sign Up</button><br>
+                <button class="back-btn btn" type="submit" formaction="../view/FirstPage.php">Go Back</button>
             </form>
         </div>
 
