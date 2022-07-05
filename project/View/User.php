@@ -24,6 +24,7 @@
             echo"<th>Name</th>";
             echo"<th>Address</th>";
             echo "<th>e-mail</th>";
+            echo "<th>Phone Number</th>";
             echo"</tr>";
             echo"</thead>";
             echo"<tbody>";
@@ -32,11 +33,15 @@
             echo"<td>".$arr1[$i]->Name ."</td>";
             echo"<td>".$arr1[$i]->Address ."</td>";
             echo"<td>".$arr1[$i]->email ."</td>";
+            echo"<td>".$arr1[$i]->number ."</td>";
             echo"</tr>";
             }
             echo"</tbody>";
             echo"</table>";
         }
-    ?>   
+    ?>
+    <br><br>
+    <button><a href="../view/Admin.php" style="text-decoration:none">Go Back</a></button>  
+    <button><a href="../view/FirstPage.php" style="text-decoration:none">Log Out</a></button> 
 </body>
 </html>
